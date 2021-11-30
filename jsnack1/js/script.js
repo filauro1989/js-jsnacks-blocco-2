@@ -12,7 +12,9 @@ cognomi = [
     'forlini',
     'sabani',
     'pieroni'
-]
+];
+
+listainvitati = [];
 
 function generatore(atr1, atr2) {
 
@@ -22,4 +24,10 @@ function generatore(atr1, atr2) {
     return persona;  
 }
 
-nomecognome = generatore(nomi, cognomi);
+for (let index = 0; index < 6; index++) {
+    
+    listainvitati.push(generatore(nomi, cognomi));
+    
+}
+
+console.log(listainvitati);
