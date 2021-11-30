@@ -1,6 +1,6 @@
 numeri = [
     3,
-    6,
+    9,
     4,
     7,
     2,
@@ -14,13 +14,14 @@ numeri = [
 ];
 
 function oddNumber(num) {
-    for (let index = 0; index < num.length; index++) {
-    let numero;  
-        if (index % 2 != 0) {
-            numero = num[index];
-        }
-    return numero;
+    let somma = 0;
+
+    for (let index = 1; index < num.length; index += 2) {
+        somma += num[index];
     }
+    console.log(somma);
+    return somma;
+
 }
 
 let numerodispari = oddNumber(numeri);
