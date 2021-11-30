@@ -1,17 +1,4 @@
-numeri = [
-    3,
-    9,
-    4,
-    7,
-    2,
-    8,
-    9,
-    6,
-    33,
-    56,
-    54,
-    44
-];
+numeri = [];
 
 function oddNumber(num) {
     let somma = 0;
@@ -24,5 +11,14 @@ function oddNumber(num) {
 
 }
 
+let randomNumber;
+let i = 0;
+    while (i < 20) {
+        numeri.push(Math.floor(Math.random() * 100));
+        i++;
+    }
+
+
+console.log(numeri);
 let numerodispari = oddNumber(numeri);
 console.log(numerodispari);
