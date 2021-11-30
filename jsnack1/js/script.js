@@ -23,4 +23,3 @@ function generatore(atr1, atr2) {
 }
 
 nomecognome = generatore(nomi, cognomi);
-console.log(nomecognome);
