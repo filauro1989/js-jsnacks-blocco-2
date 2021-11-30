@@ -31,3 +31,5 @@ for (let index = 0; index < 6; index++) {
 }
 
 console.log(listainvitati);
+let lista = document.querySelector('.lista');
+lista.innerHTML += listainvitati;
